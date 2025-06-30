@@ -1,3 +1,4 @@
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -99,5 +100,147 @@
     height: 320px;
     min-height: 180px;
     aspect-ratio: unset;
+  }
+}
+
+/* ----------- GENERATED CSS, unchanged except .columns.columns8 ----------- */
+
+/* MERGED .columns.columns8 SELECTOR */
+.columns.columns8 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.columns.columns8 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.5vw;
+  width: 100%;
+  min-height: 220px;
+}
+
+.columns.columns8 > div > div {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns8 > div > div:first-child {
+  max-width: 540px;
+  padding-right: 2vw;
+  margin-top: 0;
+}
+
+.columns.columns8 > div > div:first-child h2 {
+  font-family: Syncopate, 'Syncopate Fallback', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.015em;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.columns.columns8 > div > div:first-child p {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.columns.columns8 > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 240px;
+  margin-top: -0.55em;
+  padding-top: 0;
+}
+
+.columns.columns8 > div > div:last-child p {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.columns.columns8 > div > div:last-child a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 225px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1em 2.2em;
+  border: 1px solid #000;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+  margin: 0;
+  outline: none;
+}
+
+.columns.columns8 > div > div:last-child a:first-child {
+  border-bottom: 1px solid #f7e96d;
+}
+
+.columns.columns8 > div > div:last-child a:hover,
+.columns.columns8 > div > div:last-child a:focus {
+  border-color: #3b63fb;
+  color: #3b63fb;
+}
+
+.columns.columns8 > div > div:last-child,
+.columns.columns8 > div > div:last-child p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns8 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .columns.columns8 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem;
+    min-height: unset;
+  }
+
+  .columns.columns8 > div > div:first-child {
+    padding-right: 0;
+    max-width: none;
+  }
+
+  .columns.columns8 > div > div:last-child {
+    align-items: flex-start;
+    margin-top: 2rem;
+    min-width: 0;
+  }
+
+  .columns.columns8 > div > div:last-child p {
+    align-items: flex-start;
   }
 }
