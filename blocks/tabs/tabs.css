@@ -1,3 +1,4 @@
+
 .tabs .tabs-list {
   display: flex;
   gap: 0.5ch;
@@ -39,7 +40,6 @@
   margin: 0;
 }
 
-
 .tabs .tabs-list button[aria-selected='true'] {
   border-bottom: 1px solid var(--background-color);
   background-color: var(--background-color);
@@ -55,4 +55,98 @@
 
 .tabs .tabs-panel[aria-hidden='true'] {
   display: none;
+}
+
+/* .tabs.tabs5 merged block */
+.tabs.tabs5 {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabs.tabs5 .tabs-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 650px;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 32px;
+  padding: 0;
+  background: #000;
+  border: none;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab {
+  flex: 1 1 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  min-width: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab p {
+  margin: 0;
+  padding: 0 0 2px;
+  width: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  letter-spacing: 0.01em;
+  user-select: none;
+  line-height: 1.2;
+  transition: color 0.2s, font-weight 0.2s, opacity 0.2s, border-bottom 0.2s;
+  border-bottom: none;
+  display: inline-block;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab[aria-selected="true"] p {
+  color: #fff;
+  font-weight: 700;
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab[aria-selected="false"] p {
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.5;
+  border-bottom: none;
+  padding-bottom: 2px;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab,
+.tabs.tabs5 .tabs-list .tabs-tab:focus,
+.tabs.tabs5 .tabs-list .tabs-tab:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.tabs.tabs5 .tabs-panel {
+  display: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
 }
