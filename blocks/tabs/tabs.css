@@ -1,4 +1,4 @@
-
+/* General tab styles */
 .tabs .tabs-list {
   display: flex;
   gap: 0.5ch;
@@ -57,7 +57,7 @@
   display: none;
 }
 
-/* .tabs.tabs5 merged block */
+/* Tabs5 block - merged and deduplicated, ordered by specificity */
 .tabs.tabs5 {
   background: #000;
   margin: 0;
@@ -68,6 +68,7 @@
 .tabs.tabs5 .tabs-list {
   display: flex;
   flex-direction: row;
+  align-items: stretch;
   width: 100%;
   max-width: 650px;
   min-width: 320px;
@@ -83,38 +84,59 @@
 .tabs.tabs5 .tabs-list .tabs-tab {
   flex: 1 1 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  position: relative;
   background: none;
   border: none;
   outline: none;
+  min-width: 0;
   height: 100%;
   margin: 0;
   padding: 0;
   cursor: pointer;
-  position: relative;
-  min-width: 0;
   box-shadow: none;
   border-radius: 0;
-  border-bottom: none;
   box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.18s;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab:focus,
+.tabs.tabs5 .tabs-list .tabs-tab:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab[aria-selected="true"] {
+  border-bottom: 2px solid #fff;
+}
+
+.tabs.tabs5 .tabs-list .tabs-tab[aria-selected="false"] {
+  border-bottom: 2px solid transparent;
 }
 
 .tabs.tabs5 .tabs-list .tabs-tab p {
   margin: 0;
   padding: 0 0 2px;
-  width: auto;
-  text-align: center;
-  color: #fff;
+  color: rgb(255 255 255 / 50%);
   font-size: 15px;
   font-weight: 400;
-  opacity: 0.5;
   letter-spacing: 0.01em;
   user-select: none;
-  line-height: 1.2;
+  line-height: 32px;
+  text-align: center;
+  width: 100%;
+  height: 32px;
+  display: block;
+  background: none;
+  border: none;
   transition: color 0.2s, font-weight 0.2s, opacity 0.2s, border-bottom 0.2s;
+  box-sizing: border-box;
+  opacity: 0.5;
   border-bottom: none;
-  display: inline-block;
 }
 
 .tabs.tabs5 .tabs-list .tabs-tab[aria-selected="true"] p {
@@ -131,15 +153,6 @@
   opacity: 0.5;
   border-bottom: none;
   padding-bottom: 2px;
-}
-
-.tabs.tabs5 .tabs-list .tabs-tab,
-.tabs.tabs5 .tabs-list .tabs-tab:focus,
-.tabs.tabs5 .tabs-list .tabs-tab:active {
-  outline: none;
-  border: none;
-  box-shadow: none;
-  background: none;
 }
 
 .tabs.tabs5 .tabs-panel {
